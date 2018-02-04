@@ -1,7 +1,7 @@
 FROM alpine
 
 MAINTAINER Michael Kolb <dev@goroot.de>
-RUN apk --no-cache add nodejs-npm git openssh && npm install -g hexo
+RUN apk --no-cache add nodejs-npm git openssh imagemagick && npm install -g hexo
 
 ENV GIT_URL=ssh://git@foo.com:60000/site.git
 ENV SECRET=password
