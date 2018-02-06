@@ -2,6 +2,7 @@
 
 echo "*** Updating from git"
 if [ -d .git ]; then
+   git reset --hard
    git pull
 else
    git clone $GIT_URL .
